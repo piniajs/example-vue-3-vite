@@ -6,7 +6,7 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
-    "pinia": "^0.1.0-alpha.1",
+    "pinia": "next",
     "vue": "next"
   },
   "devDependencies": {
