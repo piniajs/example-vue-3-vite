@@ -3,7 +3,7 @@
     <img src="./logo.png" />
     <h1>Hello Vue 3 and Pinia!</h1>
 
-    <h2>Hello {{ user.state.name }}</h2>
+    <h2>Hello {{ user.name }}</h2>
 
     <form @submit.prevent="addItemToCart">
       <input type="text" v-model="itemName" />
@@ -12,18 +12,14 @@
 
     <form @submit.prevent="buy">
       <ul>
-        <li v-for="item in cart.items.value" :key="item.name">
+        <li v-for="item in cart.items" :key="item.name">
           {{ item.name }} ({{ item.amount }})
           <button @click="cart.removeItem(item.name)" type="button">X</button>
         </li>
       </ul>
 
-      <button :disabled="!user.state.name">Buy</button>
-      <button
-        :disabled="!cart.items.value.length"
-        @click="clearCart"
-        type="button"
-      >
+      <button :disabled="!user.name">Buy</button>
+      <button :disabled="!cart.items.length" @click="clearCart" type="button">
         Clear the cart
       </button>
     </form>
@@ -51,7 +47,7 @@ export default {
 
     function clearCart() {
       if (window.confirm('Are you sure you want to clear the cart?')) {
-        cart.state.rawItems = []
+        cart.rawItems = []
       }
     }
 
@@ -60,7 +56,7 @@ export default {
 
       console.log(`Bought ${n} items`)
 
-      cart.state.rawItems = []
+      cart.rawItems = []
     }
 
     // @ts-ignore
@@ -73,9 +69,9 @@ export default {
 
       user,
       buy,
-      clearCart
+      clearCart,
     }
-  }
+  },
 }
 </script>
 
@@ -83,7 +79,13 @@ export default {
 img {
   width: 200px;
 }
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>

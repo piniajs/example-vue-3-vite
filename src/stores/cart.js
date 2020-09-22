@@ -6,15 +6,15 @@ export const useCartStore = createStore({
   id: 'cart',
   state: () => ({
     /** @type {string[]} */
-    rawItems: []
+    rawItems: [],
   }),
   getters: {
     /**
      * @returns {Array<{ name: string; amount: number }>}
      */
-    items: state =>
-      state.rawItems.reduce((items, item) => {
-        const existingItem = items.find(it => it.name === item)
+    items() {
+      return this.rawItems.reduce((items, item) => {
+        const existingItem = items.find((it) => it.name === item)
 
         if (!existingItem) {
           items.push({ name: item, amount: 1 })
@@ -24,6 +24,7 @@ export const useCartStore = createStore({
 
         return items
       }, [])
+    },
   },
   actions: {
     /**
@@ -47,11 +48,11 @@ export const useCartStore = createStore({
       const user = useUserStore()
       if (!user.state.name) return
 
-      console.log('Purchasing', this.items.value)
-      const n = this.items.value.length
+      console.log('Purchasing', this.items)
+      const n = this.items.length
       this.state.rawItems = []
 
       return n
-    }
-  }
+    },
+  },
 })
