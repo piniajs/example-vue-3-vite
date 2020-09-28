@@ -4,11 +4,12 @@ name: Auto merge Dependabot
 
 jobs:
   automerge:
-    needs: [Test, Lint]
     runs-on: ubuntu-latest
+    outputs:
+      actor: ${{github.actor}}
+      event: ${{toJSON(github.actor.event)}}
     if: |
       github.actor == 'dependabot[bot]' &&
-      github.event_name == 'pull_request' &&
       startsWith(github.event.pull_request.title, 'chore(deps-dev):')
     steps:
       - name: '@dependabot merge'
