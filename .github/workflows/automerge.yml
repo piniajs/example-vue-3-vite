@@ -5,6 +5,8 @@ name: Auto merge Dependabot
 jobs:
   automerge:
     runs-on: ubuntu-latest
+    if: |
+      github.actor == 'dependabot[bot]'
     steps:
       - name: '@dependabot merge'
         uses: actions/github-script@v2
@@ -17,5 +19,5 @@ jobs:
               owner: context.payload.repository.owner.login,
               repo: context.payload.repository.name,
               issue_number: context.payload.pull_request.number,
-              body: '```json\n${{toJSON(github.event)}}\n```'
+              body: '@dependabot squash and merge'
             })
