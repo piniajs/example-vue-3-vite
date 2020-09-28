@@ -5,9 +5,6 @@ name: Auto merge Dependabot
 jobs:
   automerge:
     runs-on: ubuntu-latest
-    outputs:
-      actor: ${{github.actor}}
-      event: ${{toJSON(github.actor.event)}}
     steps:
       - name: '@dependabot merge'
         uses: actions/github-script@v2
@@ -20,5 +17,5 @@ jobs:
               owner: context.payload.repository.owner.login,
               repo: context.payload.repository.name,
               issue_number: context.payload.pull_request.number,
-              body: 'test me!'
+              body: 'test me! ${{github.actor}}\n```json\n${{toJSON(github.actor.event.pull_request.title)}}\n```'
             })
