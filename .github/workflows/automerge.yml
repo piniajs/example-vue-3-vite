@@ -8,9 +8,6 @@ jobs:
     outputs:
       actor: ${{github.actor}}
       event: ${{toJSON(github.actor.event)}}
-    if: |
-      github.actor == 'dependabot[bot]' &&
-      startsWith(github.event.pull_request.title, 'chore(deps-dev):')
     steps:
       - name: '@dependabot merge'
         uses: actions/github-script@v2
@@ -23,5 +20,5 @@ jobs:
               owner: context.payload.repository.owner.login,
               repo: context.payload.repository.name,
               issue_number: context.payload.pull_request.number,
-              body: '@dependabot merge'
+              body: 'test me!'
             })
