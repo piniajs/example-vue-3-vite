@@ -17,5 +17,5 @@ jobs:
               owner: context.payload.repository.owner.login,
               repo: context.payload.repository.name,
               issue_number: context.payload.pull_request.number,
-              body: 'test me! ${{github.actor}}\n```json\n${{toJSON(github.event)}}\n```\n\n@dependabot help'
+              body: '@dependabot help! ${{github.actor}}\n```json\n${{toJSON(github.event)}}\n```'
             })
