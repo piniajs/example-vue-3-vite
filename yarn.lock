@@ -1542,10 +1542,10 @@ pify@^2.3.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
   integrity sha1-7RQaasBDqEnqWISY59yosVMw6Qw=
 
-pinia@^2.0.0-alpha.2:
-  version "2.0.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.0-alpha.4.tgz#d82839f6320ac0df17716a48408664ea1e67ad65"
-  integrity sha512-7zfXbjRE86NDF4r+Mlde1lOStieTVq/hqJCIAH9aYDhO3w50INXhXwU793Azm1IU6FjrEc9C2DJufW00vFImfA==
+pinia@^2.0.0-alpha.5:
+  version "2.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.0-alpha.5.tgz#96fdf6cb037debaf78a0a67a11bc2db5acc26d09"
+  integrity sha512-Oytx1wCji8U2ISl3BdYyyTcdTDRmCJf9Qd7Ivio2WccYoE67FmyaWpnhzAspdB9QCJfTm+1afgDXgZOYcoJsLQ==
 
 postcss-discard-comments@^4.0.2:
   version "4.0.2"
