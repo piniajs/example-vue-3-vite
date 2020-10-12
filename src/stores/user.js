@@ -17,14 +17,14 @@ export const useUserStore = createStore({
   state: () => ({
     name: 'Eduardo',
     /** @type {boolean} */
-    isAdmin: true
+    isAdmin: true,
   }),
 
   actions: {
     logout() {
-      this.patch({
+      this.$patch({
         name: '',
-        isAdmin: false
+        isAdmin: false,
       })
 
       // we could do other stuff like redirecting the user
@@ -38,10 +38,10 @@ export const useUserStore = createStore({
     async login(user, password) {
       const userData = await apiLogin(user, password)
 
-      this.patch({
+      this.$patch({
         name: user,
-        ...userData
+        ...userData,
       })
-    }
-  }
+    },
+  },
 })

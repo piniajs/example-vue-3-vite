@@ -32,7 +32,7 @@ export const useCartStore = createStore({
      * @param {string} name
      */
     addItem(name) {
-      this.state.rawItems.push(name)
+      this.rawItems.push(name)
     },
 
     /**
@@ -40,17 +40,17 @@ export const useCartStore = createStore({
      * @param {string} name
      */
     removeItem(name) {
-      const i = this.state.rawItems.lastIndexOf(name)
-      if (i > -1) this.state.rawItems.splice(i, 1)
+      const i = this.rawItems.lastIndexOf(name)
+      if (i > -1) this.rawItems.splice(i, 1)
     },
 
     async purchaseItems() {
       const user = useUserStore()
-      if (!user.state.name) return
+      if (!user.name) return
 
       console.log('Purchasing', this.items)
       const n = this.items.length
-      this.state.rawItems = []
+      this.rawItems = []
 
       return n
     },
