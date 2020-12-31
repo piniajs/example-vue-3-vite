@@ -1,8 +1,8 @@
 // @ts-check
-import { createStore } from 'pinia'
+import { defineStore } from 'pinia'
 import { useUserStore } from './user'
 
-export const useCartStore = createStore({
+export const useCartStore = defineStore({
   id: 'cart',
   state: () => ({
     /** @type {string[]} */

@@ -1,5 +1,5 @@
 // @ts-check
-import { createStore } from 'pinia'
+import { defineStore } from 'pinia'
 
 /**
  * Simulate a login
@@ -12,7 +12,7 @@ function apiLogin(a, p) {
   return Promise.reject(new Error('invalid credentials'))
 }
 
-export const useUserStore = createStore({
+export const useUserStore = defineStore({
   id: 'user',
   state: () => ({
     name: 'Eduardo',

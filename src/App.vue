@@ -26,13 +26,12 @@
   </div>
 </template>
 
-<script>
-// @ts-check
-import { ref } from 'vue'
+<script lang="ts">
+import { defineComponent, ref } from 'vue'
 import { useUserStore } from './stores/user'
 import { useCartStore } from './stores/cart'
 
-export default {
+export default defineComponent({
   setup() {
     const user = useUserStore()
     const cart = useCartStore()
@@ -72,7 +71,7 @@ export default {
       clearCart,
     }
   },
-}
+})
 </script>
 
 <style scoped>
