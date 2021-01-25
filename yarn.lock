@@ -21,10 +21,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@vitejs/plugin-vue@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-1.0.6.tgz#698afa5a77a6dcd22cf7757801f46a6f01cdbb53"
-  integrity sha512-cWJewtxnVVpjlhq6DoZ7VP7sF1jTZYVg66ehslZ0tJANWk1uRiCXdqD8yQ4npZ4XewDICQzK+c+9i3Xsubx59w==
+"@vitejs/plugin-vue@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-1.1.2.tgz#64d1f0e0739675f5717015ffb4d861c53af8fe60"
+  integrity sha512-a5ORYuPsiAO4Kb2blA/x63mDiBQBxEJkbjhVtiv5IP/I7fGfpwXPPGHx9LHD4MedpXp8icngJYMKO0hOwahtmQ==
 
 "@vue/compiler-core@3.0.5":
   version "3.0.5"
