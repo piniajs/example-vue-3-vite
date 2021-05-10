@@ -304,10 +304,10 @@ path-parse@^1.0.6:
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
   integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
 
-pinia@^2.0.0-alpha.6:
-  version "2.0.0-alpha.6"
-  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.0-alpha.6.tgz#64cdc2f4a69bfa0b587e8b8902ed2100be85837a"
-  integrity sha512-V5pL+WxYvlDxA0KN6Udqb5Qzv9psCu/l5XO8XQxGoVBvOfemTlb37CU8QtKlcx/2C7g3RyMNk72rfFwvsXUsRA==
+pinia@^2.0.0-alpha.16:
+  version "2.0.0-alpha.16"
+  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.0-alpha.16.tgz#0693b2260603a7d701fe3fa0e84bbec535746ad1"
+  integrity sha512-E2ctjES/G5X3qdbRmoj1bddVPlXKXTH97VMnETqPo2IVps2uPt0J0XTKjNsm02ofBWQc/0arUq+OLrMUh8Yenw==
 
 postcss-modules-extract-imports@^2.0.0:
   version "2.0.0"
