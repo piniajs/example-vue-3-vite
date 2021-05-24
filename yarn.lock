@@ -75,6 +75,11 @@
     "@vue/compiler-dom" "3.0.5"
     "@vue/shared" "3.0.5"
 
+"@vue/devtools-api@^6.0.0-beta.10":
+  version "6.0.0-beta.11"
+  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.0.0-beta.11.tgz#4fb4161ee41ba75f3f5198d4bfd80e4ffb7f2462"
+  integrity sha512-vpw61AkW9U8c2upjJCljHq9eh1KkD4FJ7DYbRzIETpj9WAw2VESudJZosAk4M+7npBo1Zu1jNQY03HUMVO/czQ==
+
 "@vue/reactivity@3.0.5":
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/@vue/reactivity/-/reactivity-3.0.5.tgz#e3789e4d523d845f9ae0b4d770e2b45594742fd2"
@@ -304,10 +309,12 @@ path-parse@^1.0.6:
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
   integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
 
-pinia@^2.0.0-alpha.6:
-  version "2.0.0-alpha.6"
-  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.0-alpha.6.tgz#64cdc2f4a69bfa0b587e8b8902ed2100be85837a"
-  integrity sha512-V5pL+WxYvlDxA0KN6Udqb5Qzv9psCu/l5XO8XQxGoVBvOfemTlb37CU8QtKlcx/2C7g3RyMNk72rfFwvsXUsRA==
+pinia@^2.0.0-alpha.19:
+  version "2.0.0-alpha.19"
+  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.0-alpha.19.tgz#0a119c65585a67f7756d5995d11d4b1df4acfbeb"
+  integrity sha512-U/FvKm2tVUdqEuPorkYvD3oCgIj/u5EnF9TbX5dEpkNkoWKQM1i23e97QKtQFGuTxMSfzmBFFINv4A9VeVZ1wQ==
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.10"
 
 postcss-modules-extract-imports@^2.0.0:
   version "2.0.0"
