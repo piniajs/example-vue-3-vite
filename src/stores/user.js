@@ -16,7 +16,6 @@ export const useUserStore = defineStore({
   id: 'user',
   state: () => ({
     name: 'Eduardo',
-    /** @type {boolean} */
     isAdmin: true,
   }),
 

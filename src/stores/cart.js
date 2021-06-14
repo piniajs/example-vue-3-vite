@@ -12,8 +12,8 @@ export const useCartStore = defineStore({
     /**
      * @returns {Array<{ name: string; amount: number }>}
      */
-    items() {
-      return this.rawItems.reduce((items, item) => {
+    items: (state) =>
+      state.rawItems.reduce((items, item) => {
         const existingItem = items.find((it) => it.name === item)
 
         if (!existingItem) {
@@ -23,8 +23,7 @@ export const useCartStore = defineStore({
         }
 
         return items
-      }, [])
-    },
+      }, []),
   },
   actions: {
     /**
