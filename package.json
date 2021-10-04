@@ -6,12 +6,12 @@
     "build": "vite build"
   },
   "dependencies": {
-    "pinia": "^2.0.0-rc.9",
-    "vue": "^3.2.12"
+    "pinia": "^2.0.0-rc.11",
+    "vue": "^3.2.19"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.8.1",
-    "@vue/compiler-sfc": "^3.2.12",
-    "vite": "^2.5.10"
+    "@vitejs/plugin-vue": "^1.9.2",
+    "@vue/compiler-sfc": "^3.2.19",
+    "vite": "^2.6.2"
   }
 }
