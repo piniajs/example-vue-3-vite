@@ -54,10 +54,10 @@
     "@vue/compiler-dom" "3.2.20"
     "@vue/shared" "3.2.20"
 
-"@vue/devtools-api@^6.0.0-beta.18":
-  version "6.0.0-beta.18"
-  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.0.0-beta.18.tgz#84c0aff9289a57294cb97490811f69e8a0a67f8a"
-  integrity sha512-56vRhO7nXWWFYTx520BQSDlQH5VYpwy62hFDEqi2yHHEBpEqseOP5WYQusq7BEW3DXSY9E9cfPVR5CFtJbKuMg==
+"@vue/devtools-api@^6.0.0-beta.19":
+  version "6.0.0-beta.19"
+  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.0.0-beta.19.tgz#f8e88059daa424515992426a0c7ea5cde07e99bf"
+  integrity sha512-ObzQhgkoVeoyKv+e8+tB/jQBL2smtk/NmC9OmFK8UqdDpoOdv/Kf9pyDWL+IFyM7qLD2C75rszJujvGSPSpGlw==
 
 "@vue/reactivity@3.2.20":
   version "3.2.20"
@@ -275,12 +275,12 @@ path-parse@^1.0.6:
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
-pinia@^2.0.0-rc.12:
-  version "2.0.0-rc.12"
-  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.0-rc.12.tgz#2be8b49330b768d278ce84a0812d796188fcef65"
-  integrity sha512-1MqXgyiju5fcJBfNO+aU5GP24ZxoaC5bjosSTVnb13fJYu8CfFxCZ/XWwMoD1QnZFq6JGbYigZNCaJDL2tmzQg==
+pinia@^2.0.0-rc.14:
+  version "2.0.0-rc.14"
+  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.0-rc.14.tgz#c5c004c60b56806f465cae1bacce3922cf3163ac"
+  integrity sha512-vM8vYMsFdFDK1ND6j4+f7TC4hKB8moAjyn9HcHKqdOf1bHN4fL5g9Mz/8t8U0pEqnUwR2AU8yxD0gr+uU18x3g==
   dependencies:
-    "@vue/devtools-api" "^6.0.0-beta.18"
+    "@vue/devtools-api" "^6.0.0-beta.19"
     vue-demi "*"
 
 postcss@^8.1.10:
@@ -331,10 +331,10 @@ sourcemap-codec@^1.4.4:
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
   integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
 
-vite@^2.6.5:
-  version "2.6.5"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-2.6.5.tgz#c4d25972e2f7371e682da86828722ddf5126f3d1"
-  integrity sha512-vavXMChDUb4Oh4YunrK9BrH5Ox74cu0eOp0VuyI/iqFz1FqbWD72So2c9I87lLL2n0+6tFPV5ijow60KrtxuZg==
+vite@^2.6.10:
+  version "2.6.10"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.6.10.tgz#7a4f420c6e2c7d9062c7f9ce4578a817c72b3842"
+  integrity sha512-XbevwpDJMs3lKiGEj0UQScsOCpwHIjFgfzPnFVkPgnxsF9oPv1uGyckLg58XkXv6LnO46KN9yZqJzINFmAxtUg==
   dependencies:
     esbuild "^0.13.2"
     postcss "^8.3.8"
