@@ -1,5 +1,5 @@
 // @ts-check
-import { defineStore } from 'pinia'
+import { defineStore, acceptHMRUpdate } from 'pinia'
 
 /**
  * Simulate a login
@@ -44,3 +44,7 @@ export const useUserStore = defineStore({
     },
   },
 })
+
+if (import.meta.hot) {
+  import.meta.hot.accept(acceptHMRUpdate(useUserStore, import.meta.hot))
+}

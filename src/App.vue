@@ -1,37 +1,46 @@
 <template>
-  <div id="app">
-    <img src="./logo.png" />
-    <h1>Hello Vue 3 and Pinia!</h1>
+  <Layout>
+    <div>
+      <div style="margin: 1rem 0;">
+        <PiniaLogo />
+      </div>
 
-    <h2>Hello {{ user.name }}</h2>
+      <h2>Hello {{ user.name }}</h2>
 
-    <form @submit.prevent="addItemToCart">
-      <input type="text" v-model="itemName" />
-      <button>Add</button>
-    </form>
+      <form @submit.prevent="addItemToCart">
+        <input type="text" v-model="itemName" />
+        <button>Add</button>
+      </form>
 
-    <form @submit.prevent="buy">
-      <ul>
-        <li v-for="item in cart.items" :key="item.name">
-          {{ item.name }} ({{ item.amount }})
-          <button @click="cart.removeItem(item.name)" type="button">X</button>
-        </li>
-      </ul>
+      <form @submit.prevent="buy">
+        <ul>
+          <li v-for="item in cart.items" :key="item.name">
+            {{ item.name }} ({{ item.amount }})
+            <button
+              @click="cart.removeItem(item.name)"
+              type="button"
+            >X</button>
+          </li>
+        </ul>
 
-      <button :disabled="!user.name">Buy</button>
-      <button :disabled="!cart.items.length" @click="clearCart" type="button">
-        Clear the cart
-      </button>
-    </form>
-  </div>
+        <button :disabled="!user.name">Buy</button>
+        <button :disabled="!cart.items.length" @click="clearCart" type="button">Clear the cart</button>
+      </form>
+    </div>
+  </Layout>
 </template>
 
 <script lang="ts">
+import Layout from './layouts/default.vue'
+import PiniaLogo from './components/PiniaLogo.vue'
+
 import { defineComponent, ref } from 'vue'
 import { useUserStore } from './stores/user'
 import { useCartStore } from './stores/cart'
 
 export default defineComponent({
+  components: { Layout, PiniaLogo },
+
   setup() {
     const user = useUserStore()
     const cart = useCartStore()
@@ -79,12 +88,9 @@ img {
   width: 200px;
 }
 
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+button,
+input {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 </style>
