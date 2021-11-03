@@ -7,7 +7,7 @@
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.16.2.tgz#3723cd5c8d8773eef96ce57ea1d9b7faaccd12ac"
   integrity sha512-RUVpT0G2h6rOZwqLDTrKk7ksNv7YpAilTnYe1/Q+eDjxEceRMKVWbCsX7t8h6C1qCFi/1Y8WZjcEPBAFG27GPw==
 
-"@vitejs/plugin-vue@^1.9.3":
+"@vitejs/plugin-vue@^1.9.4":
   version "1.9.4"
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-1.9.4.tgz#4f48485432cbb986a9fb9d254dc33ce30ddccbfa"
   integrity sha512-0CZqaCoChriPTTtGkERy1LGPcYjGFpi2uYRhBPIkqJqUGV5JnJFhQAgh6oH9j5XZHfrRaisX8W0xSpO4T7S78A==
@@ -30,7 +30,7 @@
     "@vue/compiler-core" "3.2.21"
     "@vue/shared" "3.2.21"
 
-"@vue/compiler-sfc@3.2.21", "@vue/compiler-sfc@^3.2.20":
+"@vue/compiler-sfc@3.2.21", "@vue/compiler-sfc@^3.2.21":
   version "3.2.21"
   resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.2.21.tgz#42639ee49e725afb7d8f1d1940e75dc17a56002c"
   integrity sha512-+yDlUSebKpz/ovxM2vLRRx7w/gVfY767pOfYTgbIhAs+ogvIV2BsIt4fpxlThnlCNChJ+yE0ERUNoROv2kEGEQ==
@@ -318,7 +318,7 @@ sourcemap-codec@^1.4.4:
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
   integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
 
-vite@^2.6.10:
+vite@^2.6.13:
   version "2.6.13"
   resolved "https://registry.yarnpkg.com/vite/-/vite-2.6.13.tgz#16b3ec85a66d5b461ac29a903874d4357f9af432"
   integrity sha512-+tGZ1OxozRirTudl4M3N3UTNJOlxdVo/qBl2IlDEy/ZpTFcskp+k5ncNjayR3bRYTCbqSOFz2JWGN1UmuDMScA==
@@ -335,7 +335,7 @@ vue-demi@*:
   resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.12.0.tgz#b202a01cdfc635443e41faea697d624caac0fa73"
   integrity sha512-eggsbQSQEJKlvQrtrJLx4J44MIVq5+Z7QetIEh1Na+ZWLgt5Fq0qskQ1QmckTTEoFcUdn36c4K23EjtXZhws7w==
 
-vue@^3.2.20:
+vue@^3.2.21:
   version "3.2.21"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.21.tgz#55f5665172d95cf97e806b9aad0a375180be23a1"
   integrity sha512-jpy7ckXdyclfRzqLjL4mtq81AkzQleE54KjZsJg/9OorNVurAxdlU5XpD49GpjKdnftuffKUvx2C5jDOrgc/zg==
