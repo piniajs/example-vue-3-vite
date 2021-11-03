@@ -6,7 +6,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "pinia": "^2.0.0-rc.15",
+    "pinia": "^2.0.0",
     "vue": "^3.2.20"
   },
   "devDependencies": {
