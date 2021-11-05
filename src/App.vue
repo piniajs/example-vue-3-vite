@@ -7,13 +7,13 @@
 
       <h2>Hello {{ user.name }}</h2>
 
-      <form @submit.prevent="addItemToCart">
+      <form @submit.prevent="addItemToCart" data-testid="add-items">
         <input type="text" v-model="itemName" />
         <button>Add</button>
       </form>
 
       <form @submit.prevent="buy">
-        <ul>
+        <ul data-testid="items">
           <li v-for="item in cart.items" :key="item.name">
             {{ item.name }} ({{ item.amount }})
             <button
@@ -24,7 +24,12 @@
         </ul>
 
         <button :disabled="!user.name">Buy</button>
-        <button :disabled="!cart.items.length" @click="clearCart" type="button">Clear the cart</button>
+        <button
+          :disabled="!cart.items.length"
+          @click="clearCart"
+          type="button"
+          data-testid="clear"
+        >Clear the cart</button>
       </form>
     </div>
   </Layout>

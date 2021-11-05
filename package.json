@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "start": "vite serve",
+    "test": "cypress run"
   },
   "dependencies": {
     "pinia": "^2.0.0",
@@ -14,6 +16,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.4",
     "@vue/compiler-sfc": "^3.2.21",
+    "cypress": "^8.7.0",
     "vite": "^2.6.13"
   }
 }
