@@ -10,13 +10,13 @@
     "test": "cypress run"
   },
   "dependencies": {
-    "pinia": "^2.0.4",
+    "pinia": "^2.0.6",
     "vue": "^3.2.23"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.10.1",
     "@vue/compiler-sfc": "^3.2.23",
-    "cypress": "^9.1.0",
+    "cypress": "^9.1.1",
     "vite": "^2.6.14"
   }
 }
