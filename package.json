@@ -14,9 +14,9 @@
     "vue": "^3.2.26"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.0.0",
+    "@vitejs/plugin-vue": "^2.0.1",
     "@vue/compiler-sfc": "^3.2.26",
     "cypress": "^9.1.1",
-    "vite": "^2.7.1"
+    "vite": "^2.7.3"
   }
 }
