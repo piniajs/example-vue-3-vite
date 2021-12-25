@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div>
-      <div style="margin: 1rem 0;">
+      <div style="margin: 1rem 0">
         <PiniaLogo />
       </div>
 
@@ -16,10 +16,7 @@
         <ul data-testid="items">
           <li v-for="item in cart.items" :key="item.name">
             {{ item.name }} ({{ item.amount }})
-            <button
-              @click="cart.removeItem(item.name)"
-              type="button"
-            >X</button>
+            <button @click="cart.removeItem(item.name)" type="button">X</button>
           </li>
         </ul>
 
@@ -29,73 +26,59 @@
           @click="clearCart"
           type="button"
           data-testid="clear"
-        >Clear the cart</button>
+        >
+          Clear the cart
+        </button>
       </form>
     </div>
   </Layout>
 </template>
 
-<script lang="ts">
-import Layout from './layouts/default.vue'
-import PiniaLogo from './components/PiniaLogo.vue'
+<script setup lang="ts">
+  import Layout from './layouts/default.vue'
+  import PiniaLogo from './components/PiniaLogo.vue'
 
-import { defineComponent, ref } from 'vue'
-import { useUserStore } from './stores/user'
-import { useCartStore } from './stores/cart'
+  import { ref } from 'vue'
+  import { useUserStore } from './stores/user'
+  import { useCartStore } from './stores/cart'
 
-export default defineComponent({
-  components: { Layout, PiniaLogo },
+  const user = useUserStore()
+  const cart = useCartStore()
 
-  setup() {
-    const user = useUserStore()
-    const cart = useCartStore()
+  const itemName = ref('')
 
-    const itemName = ref('')
+  function addItemToCart() {
+    if (!itemName.value) return
+    cart.addItem(itemName.value)
+    itemName.value = ''
+  }
 
-    function addItemToCart() {
-      if (!itemName.value) return
-      cart.addItem(itemName.value)
-      itemName.value = ''
-    }
-
-    function clearCart() {
-      if (window.confirm('Are you sure you want to clear the cart?')) {
-        cart.rawItems = []
-      }
-    }
-
-    async function buy() {
-      const n = await cart.purchaseItems()
-
-      console.log(`Bought ${n} items`)
-
+  function clearCart() {
+    if (window.confirm('Are you sure you want to clear the cart?')) {
       cart.rawItems = []
     }
+  }
 
-    // @ts-ignore
-    window.stores = { user, cart }
+  async function buy() {
+    const n = await cart.purchaseItems()
 
-    return {
-      itemName,
-      addItemToCart,
-      cart,
+    console.log(`Bought ${n} items`)
 
-      user,
-      buy,
-      clearCart,
-    }
-  },
-})
+    cart.rawItems = []
+  }
+
+  // @ts-ignore
+  window.stores = { user, cart }
 </script>
 
 <style scoped>
-img {
-  width: 200px;
-}
+  img {
+    width: 200px;
+  }
 
-button,
-input {
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-}
+  button,
+  input {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 </style>
