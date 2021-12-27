@@ -113,10 +113,10 @@
     "@vue/compiler-dom" "3.2.26"
     "@vue/shared" "3.2.26"
 
-"@vue/devtools-api@^6.0.0-beta.20.1":
-  version "6.0.0-beta.20.1"
-  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.0.0-beta.20.1.tgz#5b499647e929c35baf2a66a399578f9aa4601142"
-  integrity sha512-R2rfiRY+kZugzWh9ZyITaovx+jpU4vgivAEAiz80kvh3yviiTU3CBuGuyWpSwGz9/C7TkSWVM/FtQRGlZ16n8Q==
+"@vue/devtools-api@^6.0.0-beta.21":
+  version "6.0.0-beta.21.1"
+  resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.0.0-beta.21.1.tgz#f1410f53c42aa67fa3b01ca7bdba891f69d7bc97"
+  integrity sha512-FqC4s3pm35qGVeXRGOjTsRzlkJjrBLriDS9YXbflHLsfA9FrcKzIyWnLXoNm+/7930E8rRakXuAc2QkC50swAw==
 
 "@vue/reactivity-transform@3.2.26":
   version "3.2.26"
@@ -401,10 +401,10 @@ csstype@^2.6.8:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.19.tgz#feeb5aae89020bb389e1f63669a5ed490e391caa"
   integrity sha512-ZVxXaNy28/k3kJg0Fou5MiYpp88j7H9hLZp8PDC3jV0WFjfH5E9xHb56L0W59cPbKbcHXeP4qyT8PrHp8t6LcQ==
 
-cypress@^9.1.1:
-  version "9.1.1"
-  resolved "https://registry.yarnpkg.com/cypress/-/cypress-9.1.1.tgz#26720ca5a22077cd85f49745616b7a08152a298f"
-  integrity sha512-yWcYD8SEQ8F3okFbRPqSDj5V0xhrZBT5QRIH+P1J2vYvtEmZ4KGciHE7LCcZZLILOrs7pg4WNCqkj/XRvReQlQ==
+cypress@^9.2.0:
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/cypress/-/cypress-9.2.0.tgz#727c20b4662167890db81d5f6ba615231835b17d"
+  integrity sha512-Jn26Tprhfzh/a66Sdj9SoaYlnNX6Mjfmj5PHu2a7l3YHXhrgmavM368wjCmgrxC6KHTOv9SpMQGhAJn+upDViA==
   dependencies:
     "@cypress/request" "^2.88.10"
     "@cypress/xvfb" "^1.2.4"
@@ -1091,12 +1091,12 @@ pify@^2.2.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
   integrity sha1-7RQaasBDqEnqWISY59yosVMw6Qw=
 
-pinia@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.6.tgz#db7ebccd459ef8020d0c528d85be7930e0f4edd0"
-  integrity sha512-01mP4+KapIcTNSYLhQESy6GW0N8vY5wX3UqOwkC87e7DPjEusNJ8bENrKqdvZaRHbB2rDMOONeAbwMa3+n1/rw==
+pinia@^2.0.9:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.9.tgz#7d7767c46e3810fff046c289453242a68fc23492"
+  integrity sha512-iuYdxLJKQ07YPyOHYH05wNG9eKWqkP/4y4GE8+RqEYtz5fwHgPA5kr6zQbg/DoEJGnR2XCm1w1vdt6ppzL9ATg==
   dependencies:
-    "@vue/devtools-api" "^6.0.0-beta.20.1"
+    "@vue/devtools-api" "^6.0.0-beta.21"
     vue-demi "*"
 
 postcss@^8.1.10:
@@ -1108,7 +1108,7 @@ postcss@^8.1.10:
     picocolors "^1.0.0"
     source-map-js "^1.0.1"
 
-postcss@^8.3.11:
+postcss@^8.4.5:
   version "8.4.5"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.5.tgz#bae665764dfd4c6fcc24dc0fdf7e7aa00cc77f95"
   integrity sha512-jBDboWM8qpaqwkMwItqTQTiFikhs/67OYVvblFFTM7MrZjt6yMKd6r2kgXizEbTTljacm4NldIlZnhbjr84QYg==
@@ -1398,13 +1398,13 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vite@^2.7.3:
-  version "2.7.3"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-2.7.3.tgz#e983cf4f71f42c192436bfcad1b75932642da293"
-  integrity sha512-GAY1P+9fLJOju1SRm8+hykVnEXog+E+KXuqqyMBQDriKCUIKzWnPn142yNNhSdf/ixYGYdUa5ce3A8WaEajzGw==
+vite@^2.7.7:
+  version "2.7.7"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.7.7.tgz#f2f1af5f9fc409053130261416000447347bc203"
+  integrity sha512-Nm4ingl//gMSj/p1aCBHuTc5Fd8W8Mwdci/HUvqCVq8xaJqF7z08S/LRq1M9kS0jRfJk1/f/CwUyQAr6YgsOLw==
   dependencies:
     esbuild "^0.13.12"
-    postcss "^8.3.11"
+    postcss "^8.4.5"
     resolve "^1.20.0"
     rollup "^2.59.0"
   optionalDependencies:
