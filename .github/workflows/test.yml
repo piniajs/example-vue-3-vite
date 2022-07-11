@@ -11,9 +11,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - uses: cypress-io/github-action@v2
+      - uses: cypress-io/github-action@v4
         with:
-          headless: true
           # env: PORT=4000
           build: yarn run build
           start: yarn run start
