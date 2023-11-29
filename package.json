@@ -15,7 +15,7 @@
     "vue": "^3.2.47"
   },
   "devDependencies": {
-    "@types/node": "^18.15.11",
+    "@types/node": "^20.10.1",
     "@vitejs/plugin-vue": "^4.1.0",
     "@vue/compiler-sfc": "^3.2.47",
     "@vue/tsconfig": "^0.1.3",
