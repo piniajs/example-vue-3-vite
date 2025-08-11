@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 22.18.0
       - uses: cypress-io/github-action@v4
         with:
           # env: PORT=4000
