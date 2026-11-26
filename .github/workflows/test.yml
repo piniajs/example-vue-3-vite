@@ -10,8 +10,8 @@ jobs:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
         with:
-          node-version: 26.13.0
-      - uses: cypress-io/github-action@v7.1.9
+          node-version: 26.13.1
+      - uses: cypress-io/github-action@v7.4.10
         with:
           # env: PORT=4000
           build: yarn run build
